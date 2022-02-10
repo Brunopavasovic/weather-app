@@ -14,6 +14,12 @@
   transition: 0.4 ease;
 }
 
+.App.warm {
+  background-image: url(images/warm-bg.jpg);
+  background-size: cover;
+  transition: 0.4 ease;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -32,6 +38,7 @@ label {
 }
 
 .search {
+  margin-top: 10px;
   max-height: 200px;
   width: auto;
   display: flex;
@@ -67,7 +74,9 @@ label {
   box-shadow: inset 0px 0px 5px #c1c1c1;
 }
 
-.show-city-name {
+.show-city-name,
+.show-date {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;

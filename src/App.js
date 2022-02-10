@@ -1,5 +1,5 @@
 import "./App.css";
-import City from "./components/City";
+import Button from "./components/Button";
 
 function App() {
   return (
@@ -12,11 +12,16 @@ function App() {
             className="input-bar"
             placeholder="search city..."
           ></input>
-          <button className="btn" type="submit">
-            Search
-          </button>
+          <Button />
         </div>
-        <City />
+        <div className="show-city-name">
+          <h1>
+            Zagreb,<span>CRO</span>
+          </h1>
+        </div>
+        <div className="show-date">
+          <h3>date</h3>
+        </div>
       </div>
     </div>
   );
