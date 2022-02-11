@@ -7,22 +7,30 @@
   font-family: "Roboto", sans-serif;
 }
 
+:root {
+  --main-color-cold: black;
+  --main-color-warm: #ccc;
+}
+
 .App {
   background-image: url(images/cold-bg.jpg);
   background-size: cover;
   /* background-position: bottom; */
   transition: 0.4 ease;
+  color: var(--main-color-cold);
 }
 
-.App.warm {
+.warm {
   background-image: url(images/warm-bg.jpg);
   background-size: cover;
   transition: 0.4 ease;
+  color: var(--main-color-warm);
 }
 
 .container {
   min-height: 100vh;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-start;
   background-image: linear-gradient(
@@ -83,4 +91,38 @@ label {
   flex-direction: column;
   width: auto;
   height: 50px;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.celsius {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 100px;
+  height: 100px;
+
+  position: relative;
+}
+
+.show-celsius {
+  font-size: 3rem;
+  color: var(--main-color-cold);
+}
+
+.sky {
+  margin: 20px;
+}
+
+.show-sky {
+  font-size: 3rem;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
